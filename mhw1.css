@@ -1,7 +1,6 @@
 body {
-    margin: 0;
-    background-color: azure;
-  }
+    margin: 0px;
+}
   
 header {
     background-image: url("images/header_bg.jpg");
@@ -14,7 +13,7 @@ header {
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-  }
+}
 
 #overlay {
     background-color: rgba(0, 0, 0, 0.3);
@@ -23,14 +22,21 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-  }
+}
 
 header h1 {
     width: 780px;
-    font-size: 45px;
+    font-size: 2.5em;
     z-index: 1;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+@media (max-width: 600px){
+    header h1 {
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 header nav {
@@ -39,50 +45,75 @@ header nav {
     left: 0;
     right: 0;
   
-    font-size: 25px;
+    font-size: 1em;
     padding: 30px;
 }
 
-#links {
+@media (max-width: 600px){
+    header nav {      
+        font-size: 0.6em;
+        padding: 10px;
+    }
+}
+
+#menu, footer{
     font-family: 'Merriweather', serif;
     font-style: normal;
     letter-spacing: 2.2px;
     text-transform: uppercase;
 }
 
-#links a {
+#menu a {
     margin: 15px;
-  }
+}
+
+@media (max-width: 600px){
+    #menu a {
+        margin: 5px;
+    }
+}  
 
 a {
     cursor: pointer;
 }
 
-#avatarContainer{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#pageInfo{
+    display: block;
     text-align: center;
-    margin: -50px;
+    font-weight: bold;
+    margin-top: 50px;
 }
+
+@media (max-width: 600px){
+    #pageInfo{
+        font-size: 0.8em;
+    }
+} 
 
 #avatar{
+    display: block;
+    margin: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     background-color: darkturquoise;
     border-radius: 50px;
-}
-
-#avatarContainer p{
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .page{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 50px;
 }
+
+@media (max-width: 600px){
+    .page{
+        display: flex;
+        justify-content: center;
+        font-size: .6em;
+        margin-top: 50px;
+    }
+}  
 
 .sidebar{
     display: flex;
@@ -98,14 +129,21 @@ a {
     width: 66.67%;
 }
 
+@media (max-width: 500px){
+    .crypto {
+        padding-bottom: 20px;
+        width: 75%;
+    }
+}
+
 .crypto_name{
-    font-size: 25px;
+    font-size: 1.5em;
     font-style: oblique;
     font-family: 'Source Serif 4', sans-serif;
 }
 
 .crypto_tag{
-    font-size: 20px;
+    font-size: .6em;
     font-weight: 600;
     font-family: 'Merriweather', serif;
     color: blue;
@@ -113,7 +151,7 @@ a {
 
 
 .paragraph {
-    font-size: 22px;
+    font-size: 1.2em;
     height: auto;
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
@@ -131,6 +169,29 @@ a {
 }
 
 footer {
+    text-align: center;
     background-color: black;
-    height: 100px;
+    color: whitesmoke;
+    height: 25%;
+    padding: 75px;
+}
+
+@media (max-width: 500px){
+    footer{
+        font-size: 0.7em;
+    }
+}
+
+footer nav{
+    position: relative;
+    top: 35%;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: green;
+    font-size: 1.1em;
 }
