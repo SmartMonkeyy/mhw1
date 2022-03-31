@@ -30,7 +30,6 @@ header h1 {
     z-index: 1;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: rgba(255, 0, 0, 0.342);
 }
 
 @media (max-width: 600px){
@@ -48,7 +47,6 @@ header nav {
   
     font-size: 1em;
     padding: 30px;
-    background-color: rgba(255, 0, 0, 0.342);
 }
 
 @media (max-width: 600px){
@@ -63,12 +61,10 @@ header nav {
     font-style: normal;
     letter-spacing: 2.2px;
     text-transform: uppercase;
-    background-color: rgba(0, 128, 0, 0.596);
 }
 
 #menu a {
     margin: 15px;
-    background-color: rgba(251, 255, 0, 0.596);
 }
 
 @media (max-width: 600px){
